@@ -1,0 +1,7 @@
+---
+applications:
+- name: golang-web
+  memory: 16MB
+  instances: 1
+  env:
+    GOPACKAGENAME: main

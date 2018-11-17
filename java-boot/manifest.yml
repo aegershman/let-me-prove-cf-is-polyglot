@@ -1,0 +1,6 @@
+---
+applications:
+- name: spring-web
+  memory: 1GB
+  instances: 1
+  path: target/java-boot-0.0.1-SNAPSHOT.jar

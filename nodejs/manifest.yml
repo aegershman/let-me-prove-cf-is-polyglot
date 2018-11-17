@@ -1,0 +1,6 @@
+---
+applications:
+- name: nodejs-web
+  memory: 32MB
+  instances: 1
+  command: npm start
