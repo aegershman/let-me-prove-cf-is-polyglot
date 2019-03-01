@@ -8,3 +8,4 @@ applications:
   env:
     GOPACKAGENAME: main
     BEEP_RATE: 500
+    CUSTOM_MESSAGE:

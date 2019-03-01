@@ -20,8 +20,13 @@ func main() {
 	}
 
 	log.SetOutput(os.Stdout)
+	customMessage, exists := os.LookupEnv("CUSTOM_MESSAGE")
 	for {
-		log.Println("beep")
+		if exists {
+			log.Println(customMessage, "beep")
+		} else {
+			log.Println("beep")
+		}
 		time.Sleep(time.Duration(beepRate) * time.Millisecond)
 	}
 }
