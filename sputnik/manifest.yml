@@ -7,5 +7,5 @@ applications:
   no-route: true
   env:
     GOPACKAGENAME: main
-    BEEP_RATE: 500
+    BEEP_RATE: 5000 # beep once every 5 seconds
     CUSTOM_MESSAGE:
