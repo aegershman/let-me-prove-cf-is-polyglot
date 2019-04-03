@@ -2,7 +2,7 @@
 applications:
 - name: golang-sputnik
   memory: 12MB
-  instances: 1
+  instances: 2
   health-check-type: process
   no-route: true
   env:

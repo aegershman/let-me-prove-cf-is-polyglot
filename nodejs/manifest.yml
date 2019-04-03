@@ -2,5 +2,5 @@
 applications:
 - name: nodejs-web
   memory: 32MB
-  instances: 1
+  instances: 2
   command: npm start
