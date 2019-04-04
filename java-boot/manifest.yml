@@ -3,4 +3,5 @@ applications:
 - name: spring-web
   memory: 1GB
   instances: 2
+  random-route: true
   path: target/java-boot-0.0.1-SNAPSHOT.jar

@@ -3,4 +3,5 @@ applications:
 - name: nodejs-web
   memory: 32MB
   instances: 2
+  random-route: true
   command: npm start
