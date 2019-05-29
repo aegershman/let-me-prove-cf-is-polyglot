@@ -59,3 +59,8 @@ typings/
 
 # next.js build output
 .next
+
+# https://docs.cloudfoundry.org/buildpacks/node/index.html
+# Removing package-lock because I'm not currently vendoring
+# these dependencies or taking much care to do strict versioning
+package-lock.json
