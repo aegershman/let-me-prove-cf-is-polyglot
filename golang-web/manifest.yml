@@ -4,5 +4,7 @@ applications:
   memory: 16MB
   instances: 2
   random-route: true
+  buildpacks:
+  - go_buildpack
   env:
     GOPACKAGENAME: main

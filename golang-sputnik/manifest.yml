@@ -5,6 +5,8 @@ applications:
   instances: 2
   health-check-type: process
   no-route: true
+  buildpacks:
+  - go_buildpack
   env:
     GOPACKAGENAME: main
     BEEP_RATE: 5000 # beep once every 5 seconds

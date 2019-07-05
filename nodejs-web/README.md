@@ -7,7 +7,7 @@ Nodejs on cf. You might need to change params in the `engine` block of `package.
 
 local:
 
-```bash
+```sh
 npm install
 npm start
 # http://localhost:3000
@@ -15,6 +15,6 @@ npm start
 
 pushing to cloud foundry:
 
-```bash
+```sh
 cf push
 ```

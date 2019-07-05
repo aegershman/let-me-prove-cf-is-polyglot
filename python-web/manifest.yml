@@ -1,9 +1,10 @@
 ---
 applications:
-- name: python_flask
+- name: python-web
   memory: 128MB
   instances: 2
   disk_quota: 256MB
   random-route: true
-  buildpack: python_buildpack
+  buildpacks:
+  - python_buildpack
   command: python main.py

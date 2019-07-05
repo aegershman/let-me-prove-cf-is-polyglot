@@ -1,9 +1,0 @@
-version: 1
-
-update_configs:
-  - package_manager: "javascript"
-    directory: "/nodejs"
-    update_schedule: "live"
-    default_reviewers:
-    - aegershman
-    
