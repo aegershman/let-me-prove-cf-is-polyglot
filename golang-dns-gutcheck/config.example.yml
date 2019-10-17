@@ -1,0 +1,35 @@
+log_level: info # info debug trace (etc.)
+interval: 15s # time.Duration to sleep in-between performing check runs
+
+checks:
+  - alias: exact-match-example
+    log_level: info # can be overridden on specific check
+    host: google.com
+    expected_a_records:
+      - 172.217.1.46
+      - 2607:f8b0:4009:802::200e
+      - xyzabc
+    expected_should_match: exact # exact subsetOfFound any
+    halt_on_failure: false
+
+  - alias: subsetOfFound-match-example
+    host: google.com
+    expected_a_records:
+      - 172.217.1.46
+    expected_should_match: subsetOfFound
+    halt_on_failure: false
+
+  - alias: any-match-example
+    host: google.com
+    expected_a_records:
+      - 172.217.1.46
+      - x.y.z.a.b.c
+    expected_should_match: any
+    halt_on_failure: false
+
+    # Can be used to simply evaluate what `host` returns
+  - alias: empty-expected-examples
+    host: google.com
+    expected_a_records: []
+    expected_should_match: thisValueDoesntMatter
+    halt_on_failure: false
