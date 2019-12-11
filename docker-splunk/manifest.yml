@@ -1,0 +1,16 @@
+---
+applications:
+- name: docker-splunk
+  memory: 1GB
+  instances: 1
+  disk_quota: 2GB
+  health-check-type: process
+  routes:
+  - route: splunk-hec.run.pivotal.io
+  - route: splunk-hec.run.pivotal.io
+  docker:
+    image: splunk/splunk:latest
+  env:
+    SPLUNK_START_ARGS: '--accept-license'
+    DEBUG: true
+    SPLUNK_DEFAULTS_URL: https://raw.githubusercontent.com/aegershman/let-me-prove-cf-is-polyglot/master/docker-splunk/defaultconfig.yml

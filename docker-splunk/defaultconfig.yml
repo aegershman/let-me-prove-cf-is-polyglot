@@ -1,0 +1,63 @@
+splunk:
+  role: splunk_standalone
+  upgrade: true # TODO
+  build_location: /tmp/splunk.tgz
+  build_remote_src: true
+  license_master_included: false
+  apps_location: []
+  license_uri: null
+  admin_user: admin
+  app_paths:
+    default: /opt/splunk/etc/apps
+    deployment: /opt/splunk/etc/deployment-apps
+    httpinput: /opt/splunk/etc/apps/splunk_httpinput
+    idxc: /opt/splunk/etc/master-apps
+    shc: /opt/splunk/etc/shcluster/apps
+  enable_service: false
+  exec: /opt/splunk/bin/splunk
+  group: splunk
+  hec_disabled: 0 # TODO
+  hec_enableSSL: 0 # TODO
+  hec_port: 8088
+  hec_token: F6B001C3-232D-4A89-AB7F-450C9A533B51 # uuiden
+  home: /opt/splunk
+  http_enableSSL: 0
+  http_enableSSL_cert: null
+  http_enableSSL_privKey: null
+  http_enableSSL_privKey_password: null
+  http_port: 8000
+  idxc:
+    enable: false
+    label: idxc_label
+    replication_factor: 3
+    replication_port: 9887
+    search_factor: 3
+    secret: dmwHG97SpM+GzeGPUELwr7xXowSAVmLW
+  ignore_license: false
+  license_download_dest: /tmp/splunk.lic
+  nfr_license: /tmp/nfr_enterprise.lic
+  opt: /opt
+  password: xyabc123youandme
+  pid: /opt/splunk/var/run/splunk/splunkd.pid
+  s2s_enable: true
+  s2s_port: 9997
+  search_head_cluster_url: null
+  secret: null
+  shc:
+    enable: false
+    label: shc_label
+    replication_factor: 3
+    replication_port: 9887
+    secret: EpcUlTUHMSOhdjRZb3QqPYf9Lf7L991c
+  smartstore: null
+  svc_port: 8089
+  tar_dir: splunk
+  user: splunk
+  wildcard_license: false
+
+  conf:
+    splunk-launch:
+      directory: /opt/splunk/etc
+      content:
+        "":
+          OPTIMISTIC_ABOUT_FILE_LOCKING: "1"
