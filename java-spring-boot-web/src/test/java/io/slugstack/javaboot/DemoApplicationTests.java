@@ -1,4 +1,4 @@
-package com.slugstack.javaboot;
+package io.slugstack.javaboot;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
