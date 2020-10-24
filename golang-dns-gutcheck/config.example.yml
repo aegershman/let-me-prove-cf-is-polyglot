@@ -1,3 +1,4 @@
+---
 log_level: info # info debug trace (etc.)
 interval: 15s # time.Duration to sleep in-between performing check runs
 
