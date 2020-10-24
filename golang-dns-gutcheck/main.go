@@ -10,7 +10,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"gopkg.in/yaml.v2"
+	"gopkg.in/yaml.v3"
 )
 
 type globalConfig struct {
@@ -91,7 +91,7 @@ func main() {
 
 	var globalConfig globalConfig
 
-	err = yaml.UnmarshalStrict(configFile, &globalConfig)
+	err = yaml.Unmarshal(configFile, &globalConfig)
 	if err != nil {
 		log.Fatalln(err)
 	}
