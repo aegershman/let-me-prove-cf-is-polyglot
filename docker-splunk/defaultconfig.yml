@@ -1,3 +1,4 @@
+---
 splunk:
   role: splunk_standalone
   upgrade: true # TODO

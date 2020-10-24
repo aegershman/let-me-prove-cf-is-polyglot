@@ -1,9 +1,9 @@
 ---
 applications:
-- name: java-spring-boot-web
-  memory: 1GB
-  instances: 2
-  random-route: true
-  buildpacks:
-  - java_buildpack
-  path: target/java-spring-boot-web-0.0.1-SNAPSHOT.jar
+  - name: java-spring-boot-web
+    memory: 1GB
+    instances: 2
+    random-route: true
+    buildpacks:
+      - java_buildpack
+    path: target/java-spring-boot-web-0.0.1-SNAPSHOT.jar

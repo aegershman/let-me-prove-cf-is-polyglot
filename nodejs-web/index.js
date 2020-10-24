@@ -1,7 +1,7 @@
 const app = require('express')()
 
 app.get('/', (req, res) => {
-    res.send(`
+  res.send(`
         Hey there! I'm a nodejs app.
         Look at me go.
         `)

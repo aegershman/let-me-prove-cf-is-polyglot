@@ -1,10 +1,10 @@
 ---
 applications:
-- name: golang-web
-  memory: 16MB
-  instances: 2
-  random-route: true
-  buildpacks:
-  - go_buildpack
-  env:
-    GOPACKAGENAME: main
+  - name: golang-web
+    memory: 16MB
+    instances: 2
+    random-route: true
+    buildpacks:
+      - go_buildpack
+    env:
+      GOPACKAGENAME: main

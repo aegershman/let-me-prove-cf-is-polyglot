@@ -1,9 +1,9 @@
 ---
 applications:
-- name: nodejs-web
-  memory: 32MB
-  instances: 2
-  random-route: true
-  buildpacks:
-  - nodejs_buildpack
-  command: npm start
+  - name: nodejs-web
+    memory: 32MB
+    instances: 2
+    random-route: true
+    buildpacks:
+      - nodejs_buildpack
+    command: npm start
