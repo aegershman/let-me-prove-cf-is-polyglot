@@ -21,7 +21,8 @@ local dev setup, assuming you're using `python3` as per `brew` or something to t
 # local setup:
 python3 -m venv getting-started
 source getting-started/bin/activate
-pip freeze > requirements.txt
+pip install -r requirements.txt
+pip freeze >requirements.txt
 
 # run locally; a few examples:
 gunicorn main:app

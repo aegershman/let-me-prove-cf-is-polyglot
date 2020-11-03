@@ -20,3 +20,8 @@ updates:
     directory: /python-web
     schedule:
       interval: daily
+
+  - package-ecosystem: pip
+    directory: /python-web-pipfile
+    schedule:
+      interval: daily
