@@ -2,9 +2,9 @@
 applications:
   - name: python-web
     memory: 128MB
+    disk_quota: 1GB
     instances: 1
-    disk_quota: 256MB
     random-route: true
     buildpacks:
+      # - https://github.com/cloudfoundry/python-buildpack/releases/download/v1.7.24/python-buildpack-cflinuxfs3-v1.7.24.zip
       - python_buildpack
-    command: python main.py
