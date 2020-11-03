@@ -30,3 +30,9 @@ pipenv update --outdated
 pipenv install flask gunicorn
 pipenv install -r ../python-web/requirements.txt
 ```
+
+## cf push
+
+```sh
+cf push
+```
