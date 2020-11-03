@@ -1,7 +1,7 @@
 ---
 applications:
   - name: java-spring-boot-web
-    memory: 512MB
+    memory: 1GB
     disk_quota: 1GB
     instances: 1
     random-route: true
