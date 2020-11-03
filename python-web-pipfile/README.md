@@ -1,30 +1,34 @@
 # python-web-pipfile
 
-Same as `python-web`, except using a `Pipfile` and `pipenv`.
+Similar to `python-web`, except:
 
-- [pypi/pipenv](https://pypi.org/project/pipenv/)
-- [pipenv docs homepage](https://pipenv.pypa.io/en/latest/)
+- using `pipenv` with `Pipfile`
+  - [pypi/pipenv](https://pypi.org/project/pipenv/)
+  - [pipenv docs homepage](https://pipenv.pypa.io/en/latest/)
+- launching process from `command` rather than `Procfile`
 
 ## local
 
 ```sh
-# local setup (assuming you have pipenv available):
-pipenv --three
-pipenv install flask
-pipenv install gunicorn
-
-# run locally
+# local setup and teardown (assuming you have pipenv installed):
+pipenv install
+pipenv shell
 gunicorn main:app
+exit
 
-# local cleanup:
-pipenv uninstall --all
+# alternatively, after install, could have just ran as one-off:
+pipenv run gunicorn main:app
 ```
 
 a few helpful commands to have on hand:
 
 ```sh
+pipenv --three
 pipenv --venv
 pipenv --where
 pipenv graph
 pipenv lock
+pipenv update --outdated
+pipenv install flask gunicorn
+pipenv install -r ../python-web/requirements.txt
 ```
