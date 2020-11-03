@@ -2,7 +2,7 @@
 applications:
   - name: nodejs-web
     memory: 32MB
-    instances: 2
+    instances: 1
     random-route: true
     buildpacks:
       - nodejs_buildpack

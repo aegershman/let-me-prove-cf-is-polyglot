@@ -2,7 +2,7 @@
 applications:
   - name: golang-web
     memory: 16MB
-    instances: 2
+    instances: 1
     random-route: true
     buildpacks:
       - go_buildpack
