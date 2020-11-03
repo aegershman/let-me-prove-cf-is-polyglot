@@ -42,6 +42,8 @@ mkdir -p vendor
 
 # vendors pip *.tar.gz into vendor/
 pip download -r requirements.txt --no-binary=:none: -d vendor
+
+# git add vendor/; git commit -m "vendor content"; git push; etc., etc.
 ```
 
 >cf push uploads your vendored dependencies. The buildpack installs them directly from the vendor/ directory.
