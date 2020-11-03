@@ -5,6 +5,7 @@ applications:
     disk_quota: 512MB
     instances: 1
     random-route: true
+    stack: cflinuxfs3
     buildpacks:
       - python_buildpack
     env: {}

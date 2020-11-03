@@ -1,11 +1,9 @@
 # python-web-pipfile
 
-Similar to `python-web`, except:
+Similar to `python-web` except using `pipenv` with `Pipfile`.
 
-- using `pipenv` with `Pipfile`
-  - [pypi/pipenv](https://pypi.org/project/pipenv/)
-  - [pipenv docs homepage](https://pipenv.pypa.io/en/latest/)
-- launching process from `command` rather than `Procfile`
+- [pypi/pipenv](https://pypi.org/project/pipenv/)
+- [pipenv docs homepage](https://pipenv.pypa.io/en/latest/)
 
 ## local
 
