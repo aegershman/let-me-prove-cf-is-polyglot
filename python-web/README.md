@@ -30,7 +30,7 @@ gunicorn main:app --timeout 10 --access-logfile -
 # local cleanup:
 pip uninstall -r requirements.txt -y
 deactivate
-rm -r getting-started/
+rm -rf getting-started/ __pycache__/
 ```
 
 ## vendoring
