@@ -2,8 +2,15 @@
 applications:
   - name: java-spring-boot-web
     memory: 1GB
-    instances: 2
+    disk_quota: 1GB
+    instances: 1
     random-route: true
     buildpacks:
-      - java_buildpack
+      # - https://github.com/cloudfoundry/java-buildpack/releases/download/v4.33/java-buildpack-v4.33.zip
+      - java_buildpack_offline
     path: target/java-spring-boot-web-0.0.1-SNAPSHOT.jar
+    env:
+      # JAVA_OPTS: "-Djava.security.egd=file:/dev/./urandom"
+      JBP_CONFIG_OPEN_JDK_JRE: "{ jre: { version: 11.+ }}"
+      # JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: "{enabled: false}"
+      # SPRING_PROFILES_ACTIVE: dev,cloud

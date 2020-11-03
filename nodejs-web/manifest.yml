@@ -2,8 +2,9 @@
 applications:
   - name: nodejs-web
     memory: 32MB
-    instances: 2
+    instances: 1
     random-route: true
     buildpacks:
+      # - https://github.com/cloudfoundry/nodejs-buildpack/releases/download/v1.7.33/nodejs-buildpack-cflinuxfs3-v1.7.33.zip
       - nodejs_buildpack
     command: npm start

@@ -2,9 +2,17 @@
 applications:
   - name: python-web
     memory: 128MB
-    instances: 2
-    disk_quota: 256MB
+    disk_quota: 512MB
+    instances: 1
     random-route: true
     buildpacks:
+      # - https://github.com/cloudfoundry/python-buildpack/releases/download/v1.7.24/python-buildpack-cflinuxfs3-v1.7.24.zip
       - python_buildpack
-    command: python main.py
+    env:
+      # not necessary, just examples of using BOSH-configured custom trusted certificates--
+      # both examples pulled from the cloudfoundry/python-buildpack documentation (https://docs.cloudfoundry.org/buildpacks/python/index.html)
+      #
+      # for pip during private dependency registry resolution:
+      PIP_CERT: /etc/ssl/certs/ca-certificates.crt
+      # for python to make HTTP requests with this custom certificate chain:
+      REQUESTS_CA_BUNDLE: /etc/ssl/certs/ca-certificates.crt

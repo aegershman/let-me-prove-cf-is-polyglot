@@ -2,9 +2,11 @@
 applications:
   - name: golang-web
     memory: 16MB
-    instances: 2
+    disk_quota: 16MB
+    instances: 1
     random-route: true
     buildpacks:
+      # - https://github.com/cloudfoundry/go-buildpack/releases/download/v1.9.21/go-buildpack-cflinuxfs3-v1.9.21.zip
       - go_buildpack
     env:
       GOPACKAGENAME: main
