@@ -1,12 +1,17 @@
 # python-web-pipfile
 
-Same as `python-web`, except using a `Pipfile` and [`pipenv`](https://pypi.org/project/pipenv/).
+Same as `python-web`, except using a `Pipfile` and `pipenv`.
+
+- [pypi/pipenv](https://pypi.org/project/pipenv/)
+- [pipenv docs homepage](https://pipenv.pypa.io/en/latest/)
 
 ## local
 
 ```sh
 # local setup (assuming you have pipenv available):
 pipenv --three
+pipenv install flask
+pipenv install gunicorn
 
 # run locally
 gunicorn main:app
