@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5c6cbda8e5a7bd4ff4cb29195a56263237dd353c6a89fdc7bb100fd2a5be6a73"
+            "sha256": "0841b5058432322c81d619e386cb279bbc49182a53d18c504817f0845070e22f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -34,11 +34,10 @@
         },
         "gunicorn": {
             "hashes": [
-                "sha256:1904bb2b8a43658807108d59c3f3d56c2b6121a701161de0ddf9ad140073c626",
-                "sha256:cd4a810dd51bf497552cf3f863b575dabd73d6ad6a91075b65936b151cbf4f9c"
+                "sha256:e0a968b5ba15f8a328fdfd7ab1fcb5af4470c28aaf7e55df02a99bc13138e6e8"
             ],
             "index": "pypi",
-            "version": "==20.0.4"
+            "version": "==20.1.0"
         },
         "itsdangerous": {
             "hashes": [
