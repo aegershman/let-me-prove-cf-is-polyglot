@@ -7,7 +7,7 @@ verify_ssl = true
 
 [packages]
 gunicorn = "==20.1.0"
-click = "==8.0.3"
+click = "==8.0.4"
 itsdangerous = "==2.1.0"
 Flask = "==2.0.3"
 Jinja2 = "==3.0.3"
