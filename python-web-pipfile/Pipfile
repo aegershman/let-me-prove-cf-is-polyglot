@@ -12,7 +12,7 @@ itsdangerous = "==2.1.2"
 Flask = "==2.3.1"
 Jinja2 = "==3.1.2"
 MarkupSafe = "==2.1.2"
-Werkzeug = "==2.3.1"
+Werkzeug = "==2.3.3"
 
 [requires]
 python_version = "3.8"
