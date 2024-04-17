@@ -6,7 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-gunicorn = "==21.2.0"
+gunicorn = "==22.0.0"
 click = "==8.1.7"
 itsdangerous = "==2.1.2"
 Flask = "==3.0.0"
