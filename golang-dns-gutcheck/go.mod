@@ -3,7 +3,7 @@ module github.com/aegershman/let-me-prove-cf-is-polyglot/golang-dns-gutcheck
 go 1.23
 
 require (
-	github.com/sirupsen/logrus v1.10.1
+	github.com/sirupsen/logrus v1.10.2
 	gopkg.in/yaml.v3 v3.0.1
 )
 
